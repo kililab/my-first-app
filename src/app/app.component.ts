@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { TodoComponent } from './todo/todo.component';
+import { StatusComponent } from './status/status.component';
+import { QuestsComponent } from './quests/quests.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: true,
+  imports: [RouterModule, TodoComponent, StatusComponent, QuestsComponent]
 })
 export class AppComponent {
-  title = 'my-first-app';
+  title = 'Meine Angular App';
 }

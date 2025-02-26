@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0a0b11 0%, #12141f 100%);
+  color: #b8c3e6;
+  min-height: 100vh;
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basis-Styles für häufig verwendete Elemente */
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input, select {
+  font-family: inherit;
+  background: rgba(26, 29, 47, 0.9);
+  border: 1px solid #3a4466;
+  color: #b8c3e6;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #4a9eff;
+  box-shadow: 0 0 5px rgba(74, 158, 255, 0.5);
+}
+
+/* Scrollbar für die gesamte App */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1c2c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a4466;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a5476;
+}
