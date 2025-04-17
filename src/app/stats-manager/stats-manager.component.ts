@@ -16,7 +16,7 @@ import { TodoService } from '../services/todo.service';
         <button (click)="addStat()">Hinzufügen</button>
       </div>
 
-      <div class="current-stats">
+      <div class="current-stats">                                
         <div *ngFor="let stat of availableStats$ | async" class="stat-item">
           <span class="stat-name">{{stat}}</span>
           <button class="remove-stat" (click)="removeStat(stat)">×</button>
